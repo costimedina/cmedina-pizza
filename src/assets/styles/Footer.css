@@ -1,0 +1,21 @@
+.footer-barra {
+  padding: 10px;
+  background-color: #740005;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.title-footer{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+}
+
+.listado-footer {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
