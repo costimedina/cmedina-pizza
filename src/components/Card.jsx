@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import PizzaContext from "../context/PizzaContext";
 
+
 function Card({ comidita }) {
   const navigate = useNavigate();
   const { addToCart } = useContext(PizzaContext);
@@ -26,8 +27,8 @@ function Card({ comidita }) {
         <h3 className="card-title"> ${comidita.price.toLocaleString("es-CL")}</h3>
         <hr />
         <div className="d-flex">
-          <button className="btn btn-success" onClick={() => navigate(`/pizza/${comidita.id}`)}> Ver más 👀</button>
-          <button className="btn btn-warning" onClick={() => addToCart(comidita)}>Añadir 🛒</button>
+        <button className="btn btn-success" onClick={() => navigate(`/pizza/${comidita.id}`)}> Ver más 👀</button>
+        <button className="btn btn-warning" onClick={() => addToCart(comidita)}>Añadir 🛒</button>
         </div>
       </div>
     </div>
